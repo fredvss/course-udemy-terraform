@@ -1,14 +1,18 @@
-### Depends on
-`depends_on` is a meta-argument that allows you to specify dependencies between resources. When you use `depends_on`, Terraform will ensure that the specified resources are created or destroyed in the correct order.
+# 09 - Meta-argumentos
 
-### Count
-`count` is a meta-argument that allows you to create multiple instances of a resource based on a specified count. It is useful for creating resources dynamically based on a variable or condition.
+Coleção de exemplos focada em meta-argumentos do Terraform.
 
-### For_each
-`for_each` is a meta-argument that allows you to create multiple instances of a resource based on a map or set of values. It provides more flexibility than `count` as it allows you to create resources with unique keys and values, making it easier to manage and reference them.
+## Estrutura
 
-### Lifecycle
-`lifecycle` is a meta-argument that allows you to customize the behavior of resource creation and destruction. It provides options such as `create_before_destroy`, `prevent_destroy`, and `ignore_changes`, which can be used to control how Terraform handles resource lifecycle events.
+- `01-depends-on-count`: exemplos com `depends_on` e `count`.
+- `02-for-each`: reservado para exemplos com `for_each`.
+- `03-provider`: reservado para exemplos de `provider` em recursos e módulos.
+- `04-lifecycle`: reservado para exemplos com `lifecycle`.
 
-### Provider
-`provider` is a meta-argument that allows you to specify which provider to use for a resource. This is useful when you have multiple providers configured in your Terraform configuration and want to explicitly define which provider should be used for a specific resource.
+## Resumo rapido
+
+- `depends_on`: força ordem explícita quando a dependência não é inferida.
+- `count`: cria N instâncias indexadas (`count.index`).
+- `for_each`: cria instâncias por chave (map/set), ideal para identidade estável.
+- `provider`: seleciona provider e alias específico por recurso e módulo.
+- `lifecycle`: ajusta comportamento de atualização e destruição.

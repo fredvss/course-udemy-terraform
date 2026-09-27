@@ -1,2 +1,0 @@
-### Import existing resources
-`terraform plan -generate-config-out="generated_resources.tf"` will generate a configuration file for all resources in the state file. You can then use `terraform import` to import existing resources into your Terraform state. For more information, see the [Terraform documentation on generating configuration](https://developer.hashicorp.com/terraform/language/import/generating-configuration).
