@@ -1,4 +1,7 @@
-# Local .terraform directories
+Se quiser, eu já faço o próximo passo em 1 minuto:
+
+Adicionar um .gitignore local para ignorar .terraform dessas duas pastas, se ainda não estiver coberto globalmente.
+Te entregar os comandos exatos de plan/apply para testar cada módulo na sua conta.# Local .terraform directories
 **/.terraform/*
 
 
@@ -50,6 +53,7 @@ terraform.rc
 # planout
 
 # Ignore sensitive files
+**/aws-key
 *.key
 *.pub
 *.pem
