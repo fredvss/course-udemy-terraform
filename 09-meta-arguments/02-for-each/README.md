@@ -1,8 +1,16 @@
 # 09.02 - `for_each`
 
-Diretório reservado para exemplos de `for_each`.
+Exemplo completo de `for_each` seguindo o padrão do módulo 01.
 
-Sugestao de exercicio:
+## O que este modulo cria
 
-- criar subnets a partir de um mapa de ambientes;
-- comparar resultado de `for_each` vs `count`.
+- 3 VPCs (`app`, `data`, `ops`) com `for_each`.
+- 3 subnets, uma para cada VPC.
+- 3 internet gateways, um por VPC (equivalente a um por "grupo" de subnet).
+
+## Arquivos
+
+- `main.tf`: provider e backend remoto.
+- `locals.tf`: mapa `network_by_env` usado no `for_each`.
+- `network.tf`: recursos com `for_each`.
+- `outputs.tf`: mapas com IDs de subnets e IGWs.

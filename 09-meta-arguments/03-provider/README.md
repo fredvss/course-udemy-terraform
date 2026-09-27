@@ -1,8 +1,15 @@
 # 09.03 - `provider`
 
-Diretório reservado para exemplos de uso de `provider` e aliases.
+Exemplo completo de `provider` e aliases seguindo a base do módulo 01.
 
-Sugestao de exercicio:
+## O que este modulo cria
 
-- configurar dois aliases AWS (ex.: `us-east-1` e `us-west-2`);
-- associar recursos diferentes a cada provider.
+- Uma VPC + 3 subnets em `us-east-1`.
+- Uma VPC + 3 subnets em `sa-east-1`.
+
+## Arquivos
+
+- `main.tf`: providers com aliases `aws.us_east_1` e `aws.sa_east_1`.
+- `locals.tf`: tags comuns.
+- `network.tf`: recursos replicados por região.
+- `outputs.tf`: IDs das subnets por região.

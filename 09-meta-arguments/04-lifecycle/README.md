@@ -1,9 +1,15 @@
 # 09.04 - `lifecycle`
 
-Diretório reservado para exemplos de controle de ciclo de vida de recursos.
+Exemplo simples de `lifecycle` usando buckets S3.
 
-Sugestao de exercicio:
+## O que este modulo cria
 
-- testar `create_before_destroy`;
-- testar `prevent_destroy`;
-- testar `ignore_changes` em tags.
+- 1 bucket com `create_before_destroy`.
+- 1 bucket com `prevent_destroy`.
+
+## Arquivos
+
+- `main.tf`: provider e backend remoto.
+- `locals.tf`: tags compartilhadas.
+- `bucket.tf`: recursos S3 com blocos `lifecycle`.
+- `outputs.tf`: nomes dos buckets criados.

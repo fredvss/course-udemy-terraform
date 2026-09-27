@@ -1,0 +1,1 @@
+bucket = "terraform-<AWS_ACCOUNT_ID>-us-east-1-an"
