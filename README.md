@@ -13,6 +13,7 @@ Repositório organizado por etapas, com exemplos progressivos de Terraform.
 - `07-import-moved-removed`: uso de `import`, `moved` e `removed`.
 - `08-vm-modules`: refatoração para módulos (`network` e `vm`).
 - `09-meta-arguments`: exemplos de meta-argumentos (`depends_on`, `count`, `for_each`, `provider`, `lifecycle`).
+- `10-functions-expressions`: exemplos de expressões (`conditionals`, `for`, `splat`, `dynamic`) e funções internas.
 
 ## Comandos úteis
 
